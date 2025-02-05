@@ -1,0 +1,262 @@
+1. Create a function that takes a number as an argument and returns the square of the number using an arrow function.
+
+
+function square(n)
+{
+   return n*n;
+}
+console.log("Square of a number :",square(4));
+
+
+2. Write a simple function that accepts two numbers and returns their sum.
+
+function sum(a , b)
+{
+   return a + b;
+}
+console.log("Sum of a and b is  :",sum(4,6));
+
+
+3. Write an anonymous function that returns the product of two numbers, and assign it to a variable. Call the function and display the result.
+
+let product = function(a,b)
+{
+    return a * b;
+}
+console.log("Product of two number is:", product(2,6));
+
+4. Create an IIFE (Immediately Invoked Function Expression) that logs the message "I am an IIFE!" to the console.
+
+(function ()
+{
+    console.log("I am an IIFE! :")
+    
+}) ()
+
+
+5. Write a recursive function that calculates the factorial of a given number. 	
+
+function fact(n)
+{
+    if(n===0)
+    {
+      return 1
+    }
+     return n * fact(n-1);
+
+}
+a = fact(5);
+console.log(a)
+
+
+6. Write a program that uses the ternary operator to check if a number is even or odd.
+
+function check(n)
+{
+    let r =  n%2==0 ? "even" :"odd";
+    console.log(r);
+}
+
+check(9)
+
+7.
+
+
+8. What will be the output of the following code and why?
+
+var a = 10;
+function test() {
+   console.log(a);
+    var a = 20;
+     
+}
+test();
+
+// Answer is undefined because value  of a is declare after print answer and variable a is function scope.
+
+
+9.
+
+
+// 10. Write a function that demonstrates how lexical scoping works with nested functions
+
+
+function outer()
+{
+    function inner()
+    {
+        console.log("inner function!");
+    }
+    console.log("outer function!");
+    
+    return inner()
+}
+
+outer()
+
+// 11. Write a function that checks if a variable is in the global scope or function scope.
+
+
+
+let a = 10;
+
+function check()
+{
+    let b = 20;
+    console.log("Global variable :",a)
+    
+}
+check()
+
+12. Explain what will be logged in the following code:
+
+
+
+function outer() {
+    let a = 10;
+    function inner() {
+        console.log(a);
+    }
+    inner();
+}
+outer();
+
+Answer is 10 because this is a lexical function scope.
+
+
+13. What will be the output of the following code and why?
+
+
+if (true) {
+    var x = 5;
+}
+console.log(x);
+
+
+// Answer is 5 : because if condition is true then assign the value 5 in x (var global scope)
+
+
+
+// 14. What will be the output of the following code and why?
+
+if (true) {
+    let y = 10;
+}
+console.log(y);
+
+// Answer is Error: because let variable ka scope block scope hota h   
+
+
+// 15. Write a function that shows how you can reassign a variable declared with let, but not one declared with const.
+
+
+
+function demo()
+{
+    let a = 10;
+    
+    console.log(a)
+    
+    a= 15
+    
+    console.log(a);
+    
+    const x = 10
+    
+    console.log("Const variable",x);
+    
+    // constant variable is not re-assign vale 
+}
+
+
+demo();
+
+// 16. Write a piece of code that uses const for an object and changes its properties, but prevents reassignment of the object itself.
+
+function demo()
+{
+    
+    const obj = 
+    {
+        "name":"Deepak",
+        "age":19,
+        "Course":"Django"
+    }
+
+    console.log(obj);
+    
+    obj["age"] = 20
+    
+    console.log(obj);
+    
+    
+        
+    
+}
+
+demo()
+
+
+output: { name: 'Deepak', age: 19, Course: 'Django' }
+	{ name: 'Deepak', age: 20, Course: 'Django' }
+
+
+
+17. Write a function that takes two numbers and performs addition, subtraction, multiplication, and division using arithmetic operators and returns the results as an object.
+
+function demo(a,b)
+{
+    let result = 
+    {
+        "sum":a+b,
+        "sub":a-b,
+        "mul":a*b,
+        "Div":a/b
+    }
+    
+    return result
+}
+
+console.log(demo(6,2))
+
+
+18.
+
+
+19. Write a function that takes two numbers and performs addition, subtraction, multiplication, and division using arithmetic operators and returns the results as an object
+
+
+function demo(a,b)
+{
+    let result = 
+    {
+        "sum":a+b,
+        "sub":a-b,
+        "mul":a*b,
+        "Div":a/b
+    }
+    
+    return result
+}
+
+console.log(demo(6,2))
+
+
+20. Convert the following traditional function to an arrow function:
+function greet(name) {
+    return "Hello " + name;
+}
+
+
+let greet = (name) =>
+{
+    return "hello " + name;
+}
+console.log(greet("Deepak"))
+
+
+
+
+
+
+
