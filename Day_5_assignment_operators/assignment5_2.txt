@@ -1,0 +1,249 @@
+// 1. Unary Operator
+  
+// What will the following code log to the console?
+let a = 5;
+console.log(++a);
+console.log(a++);
+console.log(a);
+
+
+Ans: 6   :value a pre- increment then print
+     6 	: value of a  is 6 and print post increment  
+     7	: value increment before print and then 7
+
+
+// 2. Equality Operator  
+
+// What will the output be when comparing these two values in JavaScript?
+
+let x = 0;
+let y = false;
+console.log(x == y);
+console.log(x === y);
+
+Answer = True
+	 False  Check data type
+
+// 3. Ternary Operator  
+
+// What is the output of the following expression?
+let age = 18;
+let result = age >= 18 ? "Adult" : "Minor";
+console.log(result);
+
+answer  : Adult  ,Because age is equal to 18
+
+
+// 4. Assignment Operator  
+
+// What will be the value of `a` after the following code executes?
+
+let a = 5;
+a += 3;
+a *= 2;
+a -= 4;
+a /= 2;
+
+
+Answer => a+=3 => 8
+	a*=3 => 24
+	a-=4 = >20
+	a/=2 => 10
+
+// 5. Logical AND (&&) Operator  
+
+// What will this code log to the console?
+let a = 10;
+let b = 20;
+let result = (a > 5) && (b < 25);
+console.log(result);
+
+Answer : True because both condition is true
+
+
+// 6. Logical OR (||) Operator  
+
+// What will the value of `res` be?
+
+let a = 0;
+let b = "hello";
+
+let res = a || b;
+console.log(res);
+
+
+Answer: True  Because if one condition is true result is true
+
+
+// 8. Increment & Decrement Operators 
+ 
+// What is the output of this code?
+
+let x = 7;
+console.log(--x);       
+console.log(x++);
+console.log(x);
+
+
+Answer => console.log(--x);  => 6   (pre-decrement)      
+	console.log(x++);  => 6 	(post-increment)
+	console.log(x);	    => 7 
+
+
+// 9. Comparison with NaN  
+
+// What will be the result of the following comparison?
+
+let a = NaN;
+let b = NaN;
+
+console.log(a == b);   
+console.log(a === b);
+
+Answer => console.log(a == b); =>  false
+	  console.log(a === b); =>false
+
+
+
+// 10. Conditional (ternary) Operator 
+ 
+// What is the output of the following?
+let x = 5;
+let result = (x > 10) ? "Greater" : (x < 10) ? "Lesser" : "Equal";
+console.log(result);
+
+Answer  = > Lesser 
+
+
+
+// 11. String Concatenation  
+
+// What will this expression output?
+let str1 = "Hello";
+let str2 = "World";
+let result = str1 + " " + str2;
+console.log(result);
+
+Answer => Hello World
+
+
+// 12. Type Conversion  
+
+// What will the output be?
+let x = 10;
+let y = "5";
+let result = x + y;
+console.log(result);
+
+Answer = 105
+
+
+// 13. Typeof Operator 
+ 
+// What will the following code log to the console?
+let a = 25;
+let b = "25";
+console.log(typeof a);
+console.log(typeof b);
+
+Answer => Number
+	 String
+
+
+// 14. Array and Primitive Types 
+ 
+// What will this code output?
+
+let arr = [1, 2, 3];
+
+let result = arr[0] + 10;
+console.log(result);
+console.log(arr[0]);
+
+Answer = 11 (index[0] value + 10 = > 1 +10 =11)
+	 1 (index 0 value)
+
+
+// 15. String Length 
+ 
+// What will the following code output?
+let str = "JavaScript";
+console.log(str.length);
+
+Answer => 10
+
+
+// 16. Falsy Values  
+
+// What will the following code log to the console?
+let x = "";
+if (x) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+
+Answer => True
+
+
+// 17. Implicit Conversion to Boolean 
+ 
+// What will this log?
+let value = 0;
+if (value) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+Answer  => False
+
+
+// 18. String and Number Comparison
+  
+// What will this output?
+let a = "5";
+let b = 5;
+console.log(a == b);
+console.log(a === b);
+
+
+Answer => True
+	 False  (check value with data type)
+
+
+// 19. Boolean Operations  
+
+// What will this log to the console?
+let a = 0;
+let b = 1;
+console.log(Boolean(a && b));
+
+Answer => False
+
+
+// 20. NaN Checks  
+
+// What will the following code output?
+
+let value = NaN;
+console.log(Number.isNaN(value));
+
+
+Answer = >0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
