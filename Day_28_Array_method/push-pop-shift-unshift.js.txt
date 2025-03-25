@@ -1,0 +1,12 @@
+let arr = ["java","cpp"]
+
+arr.push('c');
+arr.push("python");
+arr.unshift("c#");
+arr.pop();
+arr.unshift("ruby");
+arr.push("js");
+arr.shift();
+console.log(arr)
+
+//[ 'c#', 'java', 'cpp', 'c', 'js' ]
