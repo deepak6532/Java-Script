@@ -1,0 +1,152 @@
+java script 5-4-25
+
+1.const person = {
+    name: "Alex",
+    greet() {
+        return `Hello, my name is ${this.name}`;
+    }
+};
+
+console.log(person.greet());
+
+
+//Hello, my name is Alex
+
+
+
+2.
+const joinStrings = (...strings) => strings.join(" ");
+
+console.log(joinStrings("Hello", "World"));
+console.log(joinStrings("", "is", "awesome"));
+
+
+//Hello world
+// is awesome
+
+
+3.
+function sumNumbers(...nums) {
+    return nums.reduce((a, b) => a + b, 0);
+}
+
+const numbers = [1, 2, 3];
+console.log(sumNumbers(...numbers));
+
+//6
+
+
+
+
+
+4: Day08 in react 
+
+
+
+
+
+5:Find last digit of a number
+
+const findLast = (number) =>
+{
+    return (number%10);
+}
+console.log(findLast(145));
+
+
+// 145
+
+6. Check number is positive negative and zero 
+
+const checkNumber =(number) =>
+{
+    if(number > 0)
+    {
+        console.log("number is positive ")
+    }
+    else if(number < 0)
+    {
+        console.log("number is negative");
+    }
+    else
+    {
+        console.log("Number is Zero");
+    }
+}
+
+checkNumber(14);
+checkNumber(0);
+checkNumber(-12);
+
+// number is positive 
+// Number is Zero
+// number is negative
+
+
+
+
+7.Calculate area of circle
+
+const CalculateCircle = (radius) =>
+{
+    return ((3.14 * radius *radius).toFixed(2));
+}
+
+console.log(CalculateCircle(6));
+
+
+//113.04
+
+
+
+
+8. Multiply of two number 
+const Multiply = (n1,n2) =>
+{
+    return n1 *n2
+    
+}
+console.log(Multiply(6,5))
+
+//30
+
+
+
+
+9.Find the Next Odd Number: Write a lambda function to return the next odd number after a given number.
+
+const checkOdd =number =>{
+   
+  return  number%2=== 0 ? number +1 :number +2
+    
+}
+
+console.log(checkOdd(11))
+console.log(checkOdd(12))
+console.log(checkOdd(0))  
+
+//13
+//13
+//1
+
+
+
+
+10.sum of digit 
+
+const sumDigit =(num) =>
+{
+    let sum = 0;
+    let r= 0;
+    while(true)
+    {
+        r = num%10;
+        sum = sum +r;
+        num = Math.floor(num/10);
+    }
+    console.log(sum);
+    
+}
+sumDigit(424);
+
+//10
