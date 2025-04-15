@@ -36,8 +36,6 @@ let copyArray = originalArray.slice();
 
 copyArray.push("E");   
 
-  
-
 console.log(originalArray); // Output: ["A", "B", "C", "D"] (unchanged) 
 
 console.log(copyArray);    // Output: ["A", "B", "C", "D", "E"] 
@@ -104,8 +102,6 @@ console.log(cart);
 // Output: ["Laptop", "Keyboard", "Headphones"] 
 
 
-
-
 // Todo List me Task Remove Karna 
 
 // Agar koi task complete ho jaye toh usko list se remove karna hota hai. 
@@ -141,3 +137,31 @@ console.log(playlist);
 // Output: ["Song A", "New Song", "Song C"] 
 
  
+
+
+// Agar last n characters remove karne ho 
+
+// Agar kisi string ya array me se last ke kuch elements hataane ho, toh slice(0, -n) use kar sakte hain. 
+
+let filename = "document.pdf"; 
+
+  
+
+// Last 4 characters remove karna (.pdf hataana) 
+
+let nameWithoutExt = filename.slice(0, -4); 
+
+  
+
+console.log(nameWithoutExt);   
+
+// Output: "document" 
+
+// ✅ Kaam: File extensions ya unwanted characters remove karne ke liye useful.
+
+
+let f1 = "image.jpg";
+let extension = f1.slice(-4);
+let file_name = f1.slice(0, -4);
+console.log(file_name); // Output: "image"
+console.log(extension); // Output: ".jpg"
