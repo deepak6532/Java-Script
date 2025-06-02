@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+    <script src="promise.js"></script>
+</head>
+<body>
+
+<h1>JavaScript Promise Object</h1>
+<h2>The then() Method</h2>
+
+<input type="text" id="demo" placeholder="enter something...">
+<button onclick="checkvalue()">CheckValue</button>
+<h3 id="result"></h3>
+
+<script>
+  function myDisplayer(some) {
+    // Show result in <h3 id="result">, not in input field
+    document.getElementById("result").innerHTML = some;
+  }
+
+  function checkvalue() {
+    let x = document.getElementById("demo").value;
+
+    let myPromise = new Promise(function(myResolve, myReject) {
+      if (x === "0") {
+        myResolve("OK");
+      } else {
+        myReject("Error");
+      }
+    });
+
+    myPromise.then(
+      function(value) { myDisplayer(value); },
+      function(error) { myDisplayer(error); }
+    );
+  }
+</script>
+
+</body>
+</html>
