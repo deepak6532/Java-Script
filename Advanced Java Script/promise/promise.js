@@ -1,7 +1,7 @@
 /*The  soluction to the callback hell is promises a promise is a "promise  of code execution "
 The Code either executes or fails in both the cases structure will be notified.
 
-The Syntax of a promise look like ths:
+The Syntax of a primise look like ths:
 
 let promise =  new promise(function(resolve ,reject)){
     //executes
